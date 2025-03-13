@@ -30,7 +30,6 @@ class database():
             for record in data:
                 return [record["name"], record["filename"]]
     
-
 class database_post():
     def add_post(name: str, post: str, img_profile: str):
         post_db = TinyDB("./static/post.json")
