@@ -5,7 +5,7 @@ Creare un forum dove gli studenti (iniziamo con Torricelli, Varalli, Custodi e A
 
 ## Tech Stack
 - Python
-- Jninja
+- Jinja
 - HTML/CSS
 - JSON
 
