@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Debate99</title>
+        <link rel="stylesheet" href={{ url_for('static', filename="styles.css") }}
+    </head>
+    <body>
+        <header>
+            <h1>Debate99</h1>
+        </header>
+        <nav>
+            <form action="/posted" target="_self" method="post">
+                <input name="user" id="user" value={{ user }} hidden>
+                <input name="profile_pic" id="profile_pic" value={{ profile }} hidden>
+                <p>Write your post here</p>
+                {# Sistemare come viene visuallizata la tabella di input che mette il testo al centro#}
+                <input name="post" id="post" maxlength="300">
+                <br>
+                <br>
+                <button type="submit">Send</button>
+                <br>
+            </form>
+            <a href={{ url_for('home', name=user)}}><button>Back</button></a>
+        </nav>
+    </body>
+</html>

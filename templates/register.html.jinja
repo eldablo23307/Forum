@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Debate99</title>
+        <link rel="stylesheet" href={{ url_for('static', filename="styles.css") }}>
+    </head>
+    <body>
+        <header>
+            <h1>Debate99t</h1>
+        </header>
+        <div id="login">
+            <form action="/registered" method="post" target="_self" enctype="multipart/form-data">
+                <h2>Register</h2>
+                <hr>
+                <p>Insert Your Username</p>
+                <input type="text" name="name" id="name">
+                <p>Insert Your Password</p>
+                <input type="password" name="password" id="password">
+                <p>Insert Profile Picture</p>
+                <input type="file" accept="image/png, image/jpeg" name="profile">
+                <br>
+                <br>
+                <input type="submit" id="send">
+            </form>
+        </div>
+    </body>
+</html>

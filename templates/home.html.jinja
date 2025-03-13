@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Debate99</title>
+        <link rel="stylesheet" href={{ url_for('static', filename="styles.css") }}
+    </head>
+    <body>
+        <header>
+            <h1>Debate99</h1>
+            <img src={{ url_for('static', filename="Sunshine.gif")}} id="logo">
+        </header>
+        <nav>
+            <a href="/menu"><img src={{ url_for('static', filename="Menu.png")}}></a>
+            
+            <p id="username"><img src={{ prof }} id="profile">{{ user.replace("%", " ") }}</p>
+            
+        </nav>
+        <main>
+            <a href={{ url_for('new_post', name=user)}}><img src={{ url_for('static', filename="post.png")}} id="new_post"></a>
+            <br>
+            <hr>
+            <section id="post_container">
+                {% for post in posts %}
+                    <div class="post">
+                        <p><img src={{ url_for('static', filename=post.img_profile)}}>{{ post.name }}</p>
+                        <p>{{ post.post }}</p>
+                        <hr>
+                    </div>
+                {% endfor %}
+            </section>
+        </main>
+    </body>
+</html>
