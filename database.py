@@ -1,13 +1,18 @@
 from tinydb import TinyDB, Query
 from better_profanity import profanity
+from cryptography.fernet import Fernet
+
+key = b'UF8ofzIpXvMP6gv0bOL-qyVCrvHEwoVdm9fRcLW8l74='
+fernet = Fernet(key)
 class database():
 
     def add_user(nm: str, psw: str, filename: str):
         db = TinyDB("./static/db.json")
         nm = nm.replace(" ", "%")
         info = Query()
+        id = fernet.encrypt(f"{nm}".encode())
         if db.search(info.name == nm) == []:
-            db.insert({"name": nm, "password": psw, "filename": filename})
+            db.insert({"name": nm, "password": psw, "filename": filename, "id": id.decode()})
             return True
         else:
             return False
@@ -28,7 +33,16 @@ class database():
         data = db.search(info.name == nm)
         if data:
             for record in data:
-                return [record["name"], record["filename"]]
+                return [record["name"], record["filename"], record["id"]]
+            
+    def give_user_info_with_id(id: str):
+        db = TinyDB("./static/db.json")
+        info = Query()
+        id = id.replace(" ", "%")
+        data = db.search(info.id == id)
+        if data:
+            for record in data:
+                return [record["name"], record["filename"], record["id"]]
     
 class database_post():
     def add_post(name: str, post: str, img_profile: str):
