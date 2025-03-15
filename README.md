@@ -23,6 +23,10 @@ Inoltre gli utenti devono avere l'opzione di pagare una somma di denaro da stabi
 - JSON
 
 ## RoadMap
-1. Sistemare la sicurezza del login
-2. Migliorare la UI
-3. Migliorare il database
+1. Migliorare la UI
+2. Implementare il menu per le impostazione utente
+3. Aggiungere la possibilità di lasciare like ai post
+4. Aggiungere la possibilità di lasciare commenti ai post
+5. Poter seguire le persone
+6. Aggiungere tag hai post
+7. Filtrare la ricerca dei post
