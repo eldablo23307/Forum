@@ -30,3 +30,4 @@ Inoltre gli utenti devono avere l'opzione di pagare una somma di denaro da stabi
 5. Poter seguire le persone
 6. Aggiungere tag hai post
 7. Filtrare la ricerca dei post
+8. Migliorare il database

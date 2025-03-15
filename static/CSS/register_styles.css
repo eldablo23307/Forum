@@ -12,12 +12,12 @@ header #Titolo {
     color: #ffff;
 }
 
-.login {
+.register {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 300px;
+    height: 348px;
     width: 322px;
     border-style: solid;
     border-width: 1px;
@@ -25,34 +25,24 @@ header #Titolo {
     border-radius: 8px;
 }
 
-.login h2 {
+.register h2 {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     color: #ffff;
 }
 
-.login #register {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    color: #ffff;
-}
-
-.login .form {
+.register .form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.login #send {
-    background-color: #ffff;
-    width: 172px;
-    color: black;
-    height: 40px;
-    border-radius: 8px;
+.register #login {
+    color: #ffff;
 }
 
-.login input {
+.register input {
     border-radius: 8px;
     background: transparent;
     border-color: #444;
