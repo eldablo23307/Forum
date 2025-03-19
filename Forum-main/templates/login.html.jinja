@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Debate99</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href={{ url_for('static', filename="./CSS/styles_login.css") }}>
+    </head>
+    <body>
+        <header>
+            <h1 id="Titolo">Debate99</h1>
+        </header>
+        <div class="login">
+            <form action="/login" target="_self" method="post" class="form">
+                <h2>Username</h2>
+                <input id="name" name="name" type="text">
+                <h2>Password</h2>
+                <input id="password" name="password" type="password">
+                <br><br>
+                <input id="send" type="submit">
+                <br>
+                <a href="/register" id="register">Do not have an account?</a>
+            </form>
+        </div>
+        </body>
+</html>

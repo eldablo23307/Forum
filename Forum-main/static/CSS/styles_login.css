@@ -1,0 +1,64 @@
+body {
+    background-color: #1e1e1e;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header #Titolo {
+    font-size: 40px;
+    font-family: "Jaro", sans-serif;
+    color: #ffff;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 322px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #444;
+    border-radius: 8px;
+}
+
+.login h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #ffff;
+}
+
+.login #register {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #ffff;
+}
+
+.login .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login #send {
+    background-color: #ffff;
+    width: 172px;
+    color: black;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.login input {
+    border-radius: 8px;
+    background: transparent;
+    border-color: #444;
+    border-style: solid;
+    border-width: 1px;
+    width: 272px;
+    height: 30px;
+    color: #ffff;
+}

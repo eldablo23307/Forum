@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Debate99</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href={{ url_for('static', filename="CSS/register_styles.css") }}>
+    </head>
+    <body>
+        <header>
+            <h1 id="Titolo">Debate99</h1>
+        </header>
+        <div class="register">
+            <form action="/registered" method="post" target="_self" enctype="multipart/form-data">
+                <h2>Insert Your Username</h2>
+                <input type="text" name="name" id="name">
+                <h2>Insert Your Password</h2>
+                <input type="password" name="password" id="password">
+                <h2>Insert Profile Picture</h2>
+                <input type="file" accept="image/png, image/jpeg" name="profile">
+                <br>
+                <br>
+                <input type="submit" id="send">
+                <br>
+                <br>
+                <a href="/" id="login">I have an account</a>
+            </form>
+        </div>
+    </body>
+</html>
