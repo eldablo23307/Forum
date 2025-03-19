@@ -31,7 +31,7 @@ header #Titolo {
     color: #ffff;
 }
 
-.register .form {
+.register form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +40,14 @@ header #Titolo {
 
 .register #login {
     color: #ffff;
+}
+
+.register #send {
+    background-color: #ffff;
+    width: 172px;
+    color: black;
+    height: 40px;
+    border-radius: 8px;
 }
 
 .register input {
