@@ -1,0 +1,16 @@
+body {
+	background-color: #1e1e1e;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+}
+
+.header #Titolo {
+	font-size: 40px;
+	font-family: "Jaro", sans-serif;
+	color: #ffffff;
+}
+
+
