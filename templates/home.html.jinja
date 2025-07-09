@@ -18,7 +18,6 @@
         <main>
             <a href={{ url_for('new_post', id=id)}}><img src={{ url_for('static', filename="post.png")}} id="new_post"></a>
             <br>
-            <hr>
             <section id="post_container">
                 {% for post in posts %}
                     <div class="post">
