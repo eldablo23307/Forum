@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Debate99</title>
-        <link rel="stylesheet" href={{ url_for('static', filename="CSS/homepage_styles.css") }}
+        <title>Debate99</title> 
+      	<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href={{ url_for('static', filename="CSS/homepage_styles.css") }}
     </head>
     <body>
         <header>
             <h1 id="Titolo">Debate99</h1>
             <img src={{ url_for('static', filename="Sunshine.gif")}} id="logo">
         </header>
-	<div class="homepage">
         <nav>
-            <a href="/menu"><img src={{ url_for('static', filename="Menu.png")}}></a>
+            <a href="/menu"><img id="menu_img" src={{ url_for('static', filename="Menu.png")}}></a>
             <p id="username"><img src={{ prof }} id="profile">{{ user.replace("%", " ") }}</p>
             
         </nav>
@@ -28,6 +31,5 @@
                 {% endfor %}
             </section>
         </main>
-	</div>
     </body>
 </html>
