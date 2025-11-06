@@ -13,7 +13,8 @@
             <h1 id="Titolo">Debate99</h1>
             <img src={{ url_for('static', filename="Sunshine.gif")}} id="logo">
         </header>
-        <nav>
+	<id id="homepage">
+	<nav>
             <a href="/menu"><img id="menu_img" src={{ url_for('static', filename="Menu.png")}}></a>
             <p id="username"><img src={{ prof }} id="profile">{{ user.replace("%", " ") }}</p>
             
@@ -30,6 +31,7 @@
                     </div>
                 {% endfor %}
             </section>
-        </main>
+	</man>
+	</id>
     </body>
 </html>

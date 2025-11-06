@@ -18,12 +18,44 @@ header #logo {
 	height: 10%;
 }
 
+#homepage {
+	display: flex;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #444;
+	border-radius: 8px;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	max-width: 1200px;
+}
+
+
 nav {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	
+}
+
+nav a {
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav #username {
+	display: flex;
+	justify-content: flex-end;
 }
 
 nav img {
 	width: 25%;
-	height: 25%;
+}
+
+main{
+ flex-direction: column;
+}
+
+main img {
+	width: 5%;
 }
