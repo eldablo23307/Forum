@@ -21,13 +21,14 @@ header #logo {
 #homepage {
 	display: flex;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 2px;
 	border-color: #444;
 	border-radius: 8px;
 	flex-direction: column;
 	justify-content: center;
 	width: 50%;
 	max-width: 1200px;
+	margin: 0 auto;
 }
 
 
