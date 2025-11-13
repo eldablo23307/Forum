@@ -70,3 +70,12 @@ main{
 main img {
 	width: 5%;
 }
+
+.post {
+	border-style: solid;
+	border-color: #555;
+	border-width: 2px;
+	border-radius: 8px;
+	margin: 5px;
+	padding: 5px;
+}
